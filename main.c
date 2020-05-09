@@ -16,9 +16,10 @@ void branchingFactor()
 {
    int factor = atoi(getenv("BRANCHING_FACTOR"));
    /* GOOD: Prevent overflow by checking the input */
-   /*if (factor < 0 || factor > 1000) {
-       log("Factor out of range (%d)\n", factor);
-       return -1;
+   /*
+   if (factor < 0 || factor > 1000) {
+       printf("Factor out of range (%d)\n", factor);
+       return;
    }
    */
    // This line can allocate too little memory if factor
